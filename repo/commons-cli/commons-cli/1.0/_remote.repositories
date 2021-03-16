@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:48:57 MSK 2021
+commons-cli-1.0.jar>Mirror\ of\ NexusDev=
+commons-cli-1.0.jar>central=
+commons-cli-1.0.jar>nexusInternal=
+commons-cli-1.0.pom>central=
+commons-cli-1.0.pom>nexusInternal=
+commons-cli-1.0.pom>Mirror\ of\ NexusDev=

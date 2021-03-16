@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+docstring-6.8.0-sources.jar>central=
+docstring-6.8.0.jar>central=
+docstring-6.8.0.pom>central=
+docstring-6.8.0.pom>nexusInternal=
+docstring-6.8.0.jar>nexusInternal=
+docstring-6.8.0.jar>Mirror\ of\ NexusDev=
+docstring-6.8.0-javadoc.jar>central=
+docstring-6.8.0.pom>Mirror\ of\ NexusDev=

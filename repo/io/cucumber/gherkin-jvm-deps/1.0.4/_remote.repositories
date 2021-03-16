@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+gherkin-jvm-deps-1.0.4.jar>nexusInternal=
+gherkin-jvm-deps-1.0.4.pom>central=
+gherkin-jvm-deps-1.0.4-sources.jar>central=
+gherkin-jvm-deps-1.0.4.jar>central=
+gherkin-jvm-deps-1.0.4.jar>Mirror\ of\ NexusDev=
+gherkin-jvm-deps-1.0.4.pom>nexusInternal=
+gherkin-jvm-deps-1.0.4.pom>Mirror\ of\ NexusDev=
+gherkin-jvm-deps-1.0.4-javadoc.jar>central=

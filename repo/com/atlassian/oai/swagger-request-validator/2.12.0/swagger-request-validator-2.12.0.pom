@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.atlassian.pom</groupId>
+        <artifactId>central-pom</artifactId>
+        <version>5.0.29</version>
+    </parent>
+
+    <groupId>com.atlassian.oai</groupId>
+    <artifactId>swagger-request-validator</artifactId>
+    <version>2.12.0</version>
+    <packaging>pom</packaging>
+
+    <name>Swagger Request Validator</name>
+    <description>
+        Validation of request/responses against an OpenAPI / Swagger specification.
+        Includes a standalone validator, as well as adapters for Pact and other mocking/http libraries.
+    </description>
+    <url>https://bitbucket.org/atlassian/swagger-request-validator</url>
+    <inceptionYear>2016</inceptionYear>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <issueManagement>
+        <system>Bitbucket</system>
+        <url>https://bitbucket.org/atlassian/swagger-request-validator/issues</url>
+    </issueManagement>
+    <scm>
+        <connection>scm:git:ssh://git@bitbucket.org/atlassian/swagger-request-validator.git</connection>
+        <developerConnection>scm:git:ssh://git@bitbucket.org/atlassian/swagger-request-validator.git</developerConnection>
+        <tag>swagger-request-validator-2.12.0</tag>
+        <url>https://bitbucket.org/atlassian/swagger-request-validator</url>
+    </scm>
+
+    <developers>
+        <developer>
+            <id>jnavin</id>
+            <name>James Navin</name>
+            <email>jnavin@atlassian.com</email>
+            <organization>Atlassian</organization>
+            <timezone>Australia/Sydney</timezone>
+        </developer>
+    </developers>
+
+    <properties>
+        <source.encoding>UTF-8</source.encoding>
+        <jdk.version>1.8</jdk.version>
+
+        <guava.version>28.1-jre</guava.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <hamcrest-optional.version>1.1.5</hamcrest-optional.version>
+        <jackson.version>2.10.3</jackson.version>
+        <json-schema-validator.version>2.2.11</json-schema-validator.version>
+        <jsr305.version>3.0.2</jsr305.version>
+        <junit.version>4.12</junit.version>
+        <logback.version>1.2.3</logback.version>
+        <mockito.version>3.3.3</mockito.version>
+        <pact-jvm.version>3.6.14</pact-jvm.version>
+        <rest-assured.version>3.3.0</rest-assured.version>
+        <servlet.api.version>3.1.0</servlet.api.version>
+        <slf4j.version>1.7.30</slf4j.version>
+        <spring.version>4.3.26.RELEASE</spring.version>
+        <swagger-parser.version>2.0.24</swagger-parser.version>
+        <wiremock.version>2.25.1</wiremock.version>
+        <jmh-core.version>1.26</jmh-core.version>
+
+        <checkstyle.version>8.25</checkstyle.version>
+        <license-maven-plugin.version>1.20</license-maven-plugin.version>
+        <maven-checkstyle-plugin.version>3.1.0</maven-checkstyle-plugin.version>
+    </properties>
+
+    <modules>
+        <module>swagger-request-validator-core</module>
+        <module>swagger-request-validator-pact</module>
+        <module>swagger-request-validator-wiremock</module>
+        <module>swagger-request-validator-restassured</module>
+        <module>swagger-request-validator-mockmvc</module>
+        <module>swagger-request-validator-mockmvc-legacy</module>
+        <module>swagger-request-validator-springmvc</module>
+        <module>swagger-request-validator-spring-web-client</module>
+        <module>swagger-request-validator-examples</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-pact</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-wiremock</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-restassured</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-mockmvc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-springmvc</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.atlassian.oai</groupId>
+                <artifactId>swagger-request-validator-spring-web-client</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.swagger.parser.v3</groupId>
+                <artifactId>swagger-parser</artifactId>
+                <version>${swagger-parser.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.java-json-tools</groupId>
+                <artifactId>json-schema-validator</artifactId>
+                <version>${json-schema-validator.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>au.com.dius</groupId>
+                <artifactId>pact-jvm-model</artifactId>
+                <version>${pact-jvm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>au.com.dius</groupId>
+                <artifactId>pact-jvm-consumer-junit_2.12</artifactId>
+                <version>${pact-jvm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>au.com.dius</groupId>
+                <artifactId>pact-jvm-provider_2.12</artifactId>
+                <version>${pact-jvm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>au.com.dius</groupId>
+                <artifactId>pact-jvm-consumer_2.12</artifactId>
+                <version>${pact-jvm.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.hamcrest</groupId>
+                <artifactId>hamcrest</artifactId>
+                <version>${hamcrest.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>jcl-over-slf4j</artifactId>
+                <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>${logback.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.rest-assured</groupId>
+                <artifactId>rest-assured</artifactId>
+                <version>${rest-assured.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.tomakehurst</groupId>
+                <artifactId>wiremock</artifactId>
+                <version>${wiremock.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.code.findbugs</groupId>
+                <artifactId>jsr305</artifactId>
+                <version>${jsr305.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>${jackson.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>${servlet.api.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-test</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-web</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${spring.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.spotify</groupId>
+                <artifactId>hamcrest-optional</artifactId>
+                <version>${hamcrest-optional.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-core</artifactId>
+                <version>${jmh-core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.openjdk.jmh</groupId>
+                <artifactId>jmh-generator-annprocess</artifactId>
+                <version>${jmh-core.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+            <!--
+            THIRD-PARTY.txt can be generated with "mvn license:aggregate-add-third-party"
+            -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <version>${license-maven-plugin.version}</version>
+                <configuration>
+                    <licenseMerges>
+                        <licenseMerge>
+                            The Apache Software License, Version 2.0|
+                            Apache 2|Apache 2.0|Apache License 2.0|
+                            Apache 2.0 License|Apache License, Version 2.0|
+                            Apache Software License, version 2.0|
+                            Apache License Version 2.0|Apache|
+                            Apache Software License - Version 2.0
+                        </licenseMerge>
+                        <licenseMerge>
+                            The MIT License (MIT)|
+                            MIT License|The MIT License|MIT
+                        </licenseMerge>
+                        <licenseMerge>
+                            BSD 3-Clause|
+                            BSD|New BSD License
+                        </licenseMerge>
+                        <licenseMerge>
+                            Common Development and Distribution License (CDDL) v1.0|
+                            CDDL
+                        </licenseMerge>
+                        <licenseMerge>
+                            Lesser General Public License (LGPL), version 3|
+                            Lesser General Public License, version 3 or greater|LGPL v3
+                        </licenseMerge>
+                    </licenseMerges>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-checkstyle-plugin</artifactId>
+                <version>${maven-checkstyle-plugin.version}</version>
+                <configuration>
+                    <configLocation>checkstyle.xml</configLocation>
+                    <encoding>${source.encoding}</encoding>
+                    <includeTestSourceDirectory>true</includeTestSourceDirectory>
+                    <consoleOutput>true</consoleOutput>
+                    <failsOnError>true</failsOnError>
+                    <linkXRef>false</linkXRef>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>com.puppycrawl.tools</groupId>
+                        <artifactId>checkstyle</artifactId>
+                        <version>${checkstyle.version}</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

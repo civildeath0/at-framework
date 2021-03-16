@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:48:55 MSK 2021
+maven-resources-plugin-2.6.pom>Mirror\ of\ NexusDev=
+maven-resources-plugin-2.6.jar>Mirror\ of\ NexusDev=
+maven-resources-plugin-2.6.jar>central=
+maven-resources-plugin-2.6.pom>nexusInternal=
+maven-resources-plugin-2.6.jar>nexusInternal=
+maven-resources-plugin-2.6.pom>central=

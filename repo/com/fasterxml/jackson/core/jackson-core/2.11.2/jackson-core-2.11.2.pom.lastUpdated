@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sun Jan 10 20:53:29 MSK 2021
+ba1b9f4235ed0257968c4550f9253fab4e9b03bb@default-Mirror\ of\ NexusDev-http\://nexus.sigma.sbrf.ru\:8099/nexus/content/groups/internal/.lastUpdated=1610301209297
+http\://nexus.sigma.sbrf.ru\:8099/nexus/content/groups/internal/.error=Could not transfer artifact com.fasterxml.jackson.core\:jackson-core\:pom\:2.11.2 from/to Mirror of NexusDev (http\://nexus.sigma.sbrf.ru\:8099/nexus/content/groups/internal)\: Transfer failed for http\://nexus.sigma.sbrf.ru\:8099/nexus/content/groups/internal/com/fasterxml/jackson/core/jackson-core/2.11.2/jackson-core-2.11.2.pom

@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+cucumber-picocontainer-6.8.0.jar>central=
+cucumber-picocontainer-6.8.0.pom>central=
+cucumber-picocontainer-6.8.0.pom>Mirror\ of\ NexusDev=
+cucumber-picocontainer-6.8.0-sources.jar>central=
+cucumber-picocontainer-6.8.0.jar>Mirror\ of\ NexusDev=
+cucumber-picocontainer-6.8.0.jar>nexusInternal=
+cucumber-picocontainer-6.8.0.pom>nexusInternal=
+cucumber-picocontainer-6.8.0-javadoc.jar>central=

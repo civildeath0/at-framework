@@ -1,0 +1,14 @@
+{
+  "projectKey": "SMARTOFF",
+  "jiraUrl": "https://sbtatlas.sigma.sbrf.ru/jira",
+  "reportTarget": {
+    "cycleFolder": "/AT/Web/DEV",
+    "cycleName": "TestSmartOfficeAT"
+  },
+  "ssl": {
+    "trustAllStrategy": true
+  },
+  "reportSource": {
+    "type": "ALLURE"
+  }
+}

@@ -1,0 +1,6 @@
+.DS_Store
+.allure
+.idea
+run.sh
+**.iml
+**target

@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+xml-path-4.3.1.jar>central=
+xml-path-4.3.1-javadoc.jar>central=
+xml-path-4.3.1-sources.jar>central=
+xml-path-4.3.1.pom>central=
+xml-path-4.3.1.pom>Mirror\ of\ NexusDev=
+xml-path-4.3.1.jar>Mirror\ of\ NexusDev=
+xml-path-4.3.1.pom>nexusInternal=
+xml-path-4.3.1.jar>nexusInternal=

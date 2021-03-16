@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Mon Jan 18 20:56:31 MSK 2021
+maven-plugin-api-3.0.jar>Mirror\ of\ NexusDev=
+maven-plugin-api-3.0.jar>nexusInternal=
+maven-plugin-api-3.0.pom>nexusInternal=
+maven-plugin-api-3.0.pom>central=
+maven-plugin-api-3.0.pom>Mirror\ of\ NexusDev=
+maven-plugin-api-3.0.jar>central=

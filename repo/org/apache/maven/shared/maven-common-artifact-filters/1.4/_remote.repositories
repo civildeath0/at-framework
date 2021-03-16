@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Dec 29 09:48:53 MSK 2020
+maven-common-artifact-filters-1.4.jar>nexusInternal=
+maven-common-artifact-filters-1.4.pom>Mirror\ of\ NexusDev=
+maven-common-artifact-filters-1.4.pom>nexusInternal=
+maven-common-artifact-filters-1.4.jar>Mirror\ of\ NexusDev=

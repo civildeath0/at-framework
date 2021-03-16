@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+rest-assured-4.3.1.jar>central=
+rest-assured-4.3.1-sources.jar>central=
+rest-assured-4.3.1.jar>nexusInternal=
+rest-assured-4.3.1.jar>Mirror\ of\ NexusDev=
+rest-assured-4.3.1.pom>Mirror\ of\ NexusDev=
+rest-assured-4.3.1.pom>nexusInternal=
+rest-assured-4.3.1-javadoc.jar>central=
+rest-assured-4.3.1.pom>central=

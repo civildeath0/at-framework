@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:20 MSK 2021
+parent-3.11.0.pom>central=
+parent-3.11.0.pom>Mirror\ of\ NexusDev=
+parent-3.11.0.pom>nexusInternal=

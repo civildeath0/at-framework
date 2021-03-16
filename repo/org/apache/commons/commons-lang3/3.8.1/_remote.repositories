@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 22:26:53 MSK 2021
+commons-lang3-3.8.1.pom>central=
+commons-lang3-3.8.1.jar>central=
+commons-lang3-3.8.1-sources.jar>central=
+commons-lang3-3.8.1.jar>Mirror\ of\ NexusDev=
+commons-lang3-3.8.1.pom>Mirror\ of\ NexusDev=
+commons-lang3-3.8.1.jar>nexusInternal=
+commons-lang3-3.8.1-javadoc.jar>central=
+commons-lang3-3.8.1.pom>nexusInternal=

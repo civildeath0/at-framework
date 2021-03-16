@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Dec 29 09:54:27 MSK 2020
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1609224867890
+file\:///Users/out-kurochkin1-vv/Desktop/framework-for-at/repo/.error=
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact org.apache.maven.plugins\:maven-release-plugin\:pom\:2.5.3 from/to central (https\://repo.maven.apache.org/maven2)\: repo.maven.apache.org\: nodename nor servname provided, or not known
+file\:///Users/out-kurochkin1-vv/Desktop/framework-for-at/repo/.lastUpdated=1609224867732

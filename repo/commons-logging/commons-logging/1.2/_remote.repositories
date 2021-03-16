@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+commons-logging-1.2.jar>Mirror\ of\ NexusDev=
+commons-logging-1.2.pom>nexusInternal=
+commons-logging-1.2.pom>central=
+commons-logging-1.2.jar>central=
+commons-logging-1.2.jar>nexusInternal=
+commons-logging-1.2.pom>Mirror\ of\ NexusDev=
+commons-logging-1.2-javadoc.jar>central=
+commons-logging-1.2-sources.jar>central=

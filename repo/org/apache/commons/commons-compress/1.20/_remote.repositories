@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:21 MSK 2021
+commons-compress-1.20.jar>central=
+commons-compress-1.20-sources.jar>central=
+commons-compress-1.20.pom>Mirror\ of\ NexusDev=
+commons-compress-1.20-javadoc.jar>central=
+commons-compress-1.20.jar>Mirror\ of\ NexusDev=
+commons-compress-1.20.pom>central=
+commons-compress-1.20.pom>nexusInternal=

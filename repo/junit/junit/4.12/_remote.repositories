@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Jan 15 15:20:56 MSK 2021
+junit-4.12.jar>Mirror\ of\ NexusDev=
+junit-4.12.pom>nexusInternal=
+junit-4.12.jar>nexusInternal=
+junit-4.12.pom>Mirror\ of\ NexusDev=

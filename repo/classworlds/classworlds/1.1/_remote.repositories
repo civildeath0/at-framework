@@ -1,0 +1,8 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:48:57 MSK 2021
+classworlds-1.1.jar>central=
+classworlds-1.1.pom>central=
+classworlds-1.1.pom>Mirror\ of\ NexusDev=
+classworlds-1.1.jar>Mirror\ of\ NexusDev=
+classworlds-1.1.pom>nexusInternal=
+classworlds-1.1.jar>nexusInternal=

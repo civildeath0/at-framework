@@ -1,0 +1,10 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Jan 14 00:47:27 MSK 2021
+jsr305-3.0.2-sources.jar>central=
+jsr305-3.0.2.pom>Mirror\ of\ NexusDev=
+jsr305-3.0.2.jar>nexusInternal=
+jsr305-3.0.2.jar>Mirror\ of\ NexusDev=
+jsr305-3.0.2.pom>nexusInternal=
+jsr305-3.0.2-javadoc.jar>central=
+jsr305-3.0.2.jar>central=
+jsr305-3.0.2.pom>central=

@@ -1,0 +1,125 @@
+{
+  "description": "Create flight",
+  "required": [
+    "title",
+    "dateStart",
+    "dateEnd",
+    "sourceAirport",
+    "destinationAirport",
+    "sourceGmt",
+    "destinationGmt",
+    "isChecked",
+    "documents"
+  ],
+  "type": "object",
+  "properties": {
+    "conferenceId": {
+      "format": "uuid",
+      "description": "Conference that includes the flight",
+      "type": "string"
+    },
+    "title": {
+      "description": "Flight title",
+      "type": "string"
+    },
+    "description": {
+      "description": "Flight description with formatting",
+      "type": "string"
+    },
+    "shortDescription": {
+      "description": "Flight description without formatting",
+      "type": "string"
+    },
+    "dateStart": {
+      "format": "date-time",
+      "description": "Flight start date",
+      "type": "string"
+    },
+    "dateEnd": {
+      "format": "date-time",
+      "description": "Flight end date",
+      "type": "string"
+    },
+    "participants": {
+      "description": "Flight participants",
+      "uniqueItems": true,
+      "type": "array",
+      "required": [
+        "order",
+        "biographyId"
+      ],
+      "properties": {
+        "order": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "biographyId": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "flightCode": {
+      "description": "Flight code",
+      "type": "string"
+    },
+    "sourceAirport": {
+      "required": [
+        "id"
+      ],
+      "description": "Source Airport",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "destinationAirport": {
+      "required": [
+        "id"
+      ],
+      "description": "Destination Airport",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    },
+    "sourceGmt": {
+      "format": "int32",
+      "description": "Source Greenwich Mean Time offset",
+      "type": "integer"
+    },
+    "destinationGmt": {
+      "format": "int32",
+      "description": "Destination Greenwich Mean Time offset",
+      "type": "integer"
+    },
+    "isChecked": {
+      "description": "Check date period conflict",
+      "type": "boolean"
+    },
+    "documents": {
+      "description": "Documents, attached to the flight",
+      "uniqueItems": true,
+      "type": "array",
+      "required": [
+        "isPrivate"
+      ],
+      "properties": {
+        "isPrivate": {
+          "type": "boolean"
+        },
+        "isExchangeSyncNeeded": {
+          "type": "boolean"
+        },
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        }
+      }
+    }
+  }
+}
